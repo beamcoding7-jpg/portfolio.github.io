@@ -1,4 +1,3 @@
-/* ฟอนต์และตัวแปรสีหลักของเว็บไซต์ */
 :root {
   --bg: #07111f;
   --bg-soft: rgba(10, 21, 37, 0.72);
@@ -17,7 +16,6 @@
   --container: min(1120px, calc(100% - 32px));
 }
 
-/* รีเซ็ตเบื้องต้น */
 *,
 *::before,
 *::after {
@@ -65,13 +63,11 @@ code {
   font-size: 0.9em;
 }
 
-/* จำกัดความกว้างเนื้อหา */
 .container {
   width: var(--container);
   margin-inline: auto;
 }
 
-/* พื้นหลังตกแต่ง */
 .page-backdrop {
   position: fixed;
   inset: 0;
@@ -123,7 +119,6 @@ code {
   height: 220px;
 }
 
-/* หัวเว็บ */
 .site-header {
   position: sticky;
   top: 0;
@@ -225,7 +220,6 @@ code {
   transition: transform 0.25s ease, opacity 0.25s ease;
 }
 
-/* โครงสร้างแต่ละ section */
 .section {
   padding: 42px 0 110px;
 }
@@ -628,7 +622,6 @@ code {
   transform: translateY(0);
 }
 
-/* สถานะ animation ตอนเลื่อนมาถึง section */
 .js-ready .reveal {
   opacity: 0;
   transform: translateY(28px);
@@ -642,7 +635,6 @@ code {
   transform: translateY(0);
 }
 
-/* ปรับขนาดสำหรับ tablet */
 @media (max-width: 980px) {
   .navbar {
     border-radius: 28px;
@@ -674,7 +666,6 @@ code {
   }
 }
 
-/* ปรับโครงสร้างเมนูและ spacing สำหรับมือถือ */
 @media (max-width: 760px) {
   .site-header {
     padding-top: 14px;
@@ -770,7 +761,6 @@ code {
   }
 }
 
-/* ขนาดเล็กมาก */
 @media (max-width: 480px) {
   body {
     line-height: 1.58;

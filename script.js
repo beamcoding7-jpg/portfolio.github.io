@@ -1,7 +1,5 @@
-// เพิ่ม class ให้ body เพื่อเปิดใช้เอฟเฟ็กต์ที่พึ่ง JavaScript
 document.body.classList.add("js-ready");
 
-// เลือก element ที่ต้องใช้งานบ่อย
 const menuToggle = document.querySelector(".menu-toggle");
 const navMenu = document.querySelector(".nav-links");
 const navLinks = document.querySelectorAll(".nav-link");
@@ -9,12 +7,10 @@ const revealItems = document.querySelectorAll(".reveal");
 const sections = document.querySelectorAll("main section[id]");
 const yearTarget = document.querySelector("#current-year");
 
-// อัปเดตปีปัจจุบันใน footer อัตโนมัติ
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
 
-// เปิด-ปิดเมนูบนหน้าจอมือถือ
 if (menuToggle && navMenu) {
   menuToggle.addEventListener("click", () => {
     const isOpen = menuToggle.classList.toggle("is-open");
@@ -23,7 +19,6 @@ if (menuToggle && navMenu) {
   });
 }
 
-// เมื่อกดเมนูแล้ว ให้ปิดเมนูมือถืออัตโนมัติ
 navLinks.forEach((link) => {
   link.addEventListener("click", () => {
     if (!menuToggle || !navMenu) return;
@@ -34,7 +29,6 @@ navLinks.forEach((link) => {
   });
 });
 
-// ทำ animation ให้ section ค่อย ๆ ปรากฏตอนเลื่อนถึง
 if ("IntersectionObserver" in window) {
   const revealObserver = new IntersectionObserver(
     (entries) => {
@@ -51,7 +45,6 @@ if ("IntersectionObserver" in window) {
 
   revealItems.forEach((item) => revealObserver.observe(item));
 
-  // เปลี่ยนสถานะเมนูให้ active ตาม section ที่กำลังดูอยู่
   const sectionObserver = new IntersectionObserver(
     (entries) => {
       entries.forEach((entry) => {

@@ -8,28 +8,21 @@
       name="description"
       content="เว็บไซต์พอร์ตโฟลิโอของบริพัตร ใจเอื้อเฟื้อ พร้อมข้อมูลส่วนตัวและทักษะที่สนใจ"
     />
-
-    <!-- โหลดฟอนต์สำหรับลุคที่ดูโมเดิร์นและอ่านง่าย -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
-
-    <!-- ไฟล์ CSS หลักของหน้าเว็บ -->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <!-- พื้นหลังตกแต่งหลักของหน้าเว็บ -->
     <div class="page-backdrop" aria-hidden="true">
       <span class="orb orb-one"></span>
       <span class="orb orb-two"></span>
       <span class="grid-line grid-line-one"></span>
       <span class="grid-line grid-line-two"></span>
     </div>
-
-    <!-- ส่วนหัวพร้อมเมนูนำทาง -->
     <header class="site-header">
       <nav class="navbar container" aria-label="Main navigation">
         <a class="brand" href="#home">
@@ -39,8 +32,6 @@
             <small>portfolio</small>
           </span>
         </a>
-
-        <!-- ปุ่มเมนูสำหรับหน้าจอมือถือ -->
         <button
           class="menu-toggle"
           type="button"
@@ -52,8 +43,6 @@
           <span></span>
           <span></span>
         </button>
-
-        <!-- เมนูหลัก 3 ส่วนตามที่ต้องการ -->
         <div class="nav-links" id="site-menu">
           <a href="#home" class="nav-link active">หน้าแรก</a>
           <a href="#about" class="nav-link">เกี่ยวกับฉัน</a>
@@ -63,7 +52,6 @@
     </header>
 
     <main>
-      <!-- SECTION: HOME -->
       <section class="hero-section section reveal" id="home">
         <div class="container hero-grid">
           <div class="hero-copy">
@@ -78,14 +66,10 @@
               เพราะผมชอบออกแบบโปรแกรมที่ช่วยแก้ปัญหาได้จริง
               พร้อมตั้งใจทำทุกงานให้ออกมาดีที่สุดทั้งในด้านการใช้งาน ความสวยงาม และรายละเอียดของระบบ
             </p>
-
-            <!-- กลุ่มปุ่มสำหรับเลื่อนไปยัง section สำคัญ -->
             <div class="hero-actions">
               <a class="button button-primary" href="#about">ดูข้อมูลของฉัน</a>
               <a class="button button-secondary" href="#skills">ดูทักษะ</a>
             </div>
-
-            <!-- การ์ดข้อมูลสั้น ๆ สำหรับเปลี่ยนเป็นข้อมูลจริงของคุณ -->
             <div class="quick-info">
               <article class="info-card">
                 <span class="info-label">สายที่สนใจ</span>
@@ -101,19 +85,14 @@
               </article>
             </div>
           </div>
-
-          <!-- กล่องโชว์รูปโปรไฟล์: คุณสามารถแทนที่ด้วยรูปจริงได้ -->
           <div class="hero-visual">
             <div class="photo-frame">
-              <!-- รูปโปรไฟล์หลักของคุณ -->
               <img
                 class="profile-photo"
                 src="f73e6618-8474-4fec-8d58-91f8ee73aba1.jpeg"
                 alt="Beam's profile picture"
               />
             </div>
-
-            <!-- การ์ดเสริมด้านข้างสำหรับใส่ข้อความเด่นหรือจุดขาย -->
             <div class="floating-note">
               <span>แนวทางที่ชอบ</span>
               <strong>ออกแบบระบบที่ฉลาด ใช้งานได้จริง และดูดี</strong>
@@ -122,7 +101,6 @@
         </div>
       </section>
 
-      <!-- SECTION: ABOUT ME -->
       <section class="about-section section reveal" id="about">
         <div class="container">
           <div class="section-heading">
@@ -135,10 +113,8 @@
           </div>
 
           <div class="about-grid">
-            <!-- บล็อกนี้สำหรับรูปและรายละเอียดพื้นฐาน -->
             <article class="panel profile-panel">
               <div class="mini-photo-frame">
-                <!-- รูปย่อใน section About Me -->
                 <img
                   class="profile-photo"
                   src="f73e6618-8474-4fec-8d58-91f8ee73aba1.jpeg"
@@ -158,8 +134,6 @@
                 <li><span>อายุ</span><strong>17 ปี</strong></li>
               </ul>
             </article>
-
-            <!-- บล็อกนี้สำหรับเขียนเรื่องราวและจุดเด่นของคุณ -->
             <div class="about-content">
               <article class="panel story-panel">
                 <h3>เรื่องราวของฉัน</h3>
@@ -205,7 +179,6 @@
         </div>
       </section>
 
-      <!-- SECTION: MY SKILL -->
       <section class="skills-section section reveal" id="skills">
         <div class="container">
           <div class="section-heading">
@@ -218,7 +191,6 @@
           </div>
 
           <div class="skills-layout">
-            <!-- คอลัมน์ซ้าย: การ์ดหมวดหมู่ทักษะ -->
             <div class="skill-groups">
               <article class="panel skill-group">
                 <h3>ภาษาที่ใช้งาน</h3>
@@ -255,7 +227,6 @@
               </article>
             </div>
 
-            <!-- คอลัมน์ขวา: แถบแสดงระดับความมั่นใจของทักษะ -->
             <article class="panel skill-meter-panel">
               <div class="panel-intro">
                 <h3>ระดับความมั่นใจในทักษะ</h3>
@@ -306,8 +277,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- ข้อความสรุปสั้น ๆ สำหรับปิด section ทักษะ -->
               <div class="skill-note">
                 <p>
                   ผมเชื่อว่าทักษะที่ดีไม่ใช่แค่เขียนโค้ดได้
@@ -319,16 +288,12 @@
         </div>
       </section>
     </main>
-
-    <!-- ส่วนท้ายเว็บไซต์ -->
     <footer class="site-footer">
       <div class="container footer-content">
         <p>© <span id="current-year"></span> พอร์ตโฟลิโอของบีม</p>
         <a href="#home">กลับขึ้นด้านบน</a>
       </div>
     </footer>
-
-    <!-- ไฟล์ JavaScript สำหรับเมนูมือถือและเอฟเฟ็กต์เล็กน้อย -->
     <script src="script.js" defer></script>
   </body>
 </html>
