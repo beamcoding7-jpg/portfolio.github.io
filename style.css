@@ -534,18 +534,40 @@ code {
 }
 
 .chip-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(132px, 1fr));
+  gap: 12px;
 }
 
-.chip-list span {
-  padding: 10px 14px;
-  border-radius: 999px;
+.skill-chip {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-height: 54px;
+  padding: 12px 14px;
+  border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  background: rgba(255, 255, 255, 0.04);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.03)),
+    rgba(255, 255, 255, 0.03);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.05),
+    0 14px 34px rgba(0, 0, 0, 0.16);
+}
+
+.skill-chip-icon {
+  width: 20px;
+  height: 20px;
+  flex: none;
+  object-fit: contain;
+  filter: drop-shadow(0 0 14px rgba(255, 255, 255, 0.1));
+}
+
+.skill-chip-label {
   color: #d9ecff;
-  font-weight: 500;
+  font-size: 0.95rem;
+  font-weight: 600;
+  line-height: 1.2;
 }
 
 .skill-meter-panel {
@@ -740,6 +762,10 @@ code {
     padding: 22px;
   }
 
+  .chip-list {
+    grid-template-columns: repeat(auto-fit, minmax(118px, 1fr));
+  }
+
   .detail-list li,
   .footer-content {
     flex-direction: column;
@@ -777,6 +803,16 @@ code {
 
   .button {
     min-width: 0;
+  }
+
+  .skill-chip {
+    min-height: 50px;
+    gap: 10px;
+    padding: 11px 12px;
+  }
+
+  .skill-chip-label {
+    font-size: 0.9rem;
   }
 
   .photo-placeholder {
